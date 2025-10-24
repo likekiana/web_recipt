@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-utensils"></i>Recipe Finder</h1>
+            <p>从全世界寻找美味食物的食谱</p>
+        </header>
+        <p class="api-link">数据来源<a href="https://www.themealdb.com/">The MealDB</a></p>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="search for meals or keywords"/>
+            <button id="search-btn">搜索</button>
+        </div>
+
+        <div id="error-container" class="hidden">
+            <p>没有找到想要的结果,尝试其他的输入</p>
+        </div>
+        
+        <div id="result-heading">
+            
+        </div>
+
+        <div id="meals" class="meals-container">
+            <!-- 食谱卡片将在这里动态生成 -->
+        </div>
+
+        <div id="meal-details" class="hidden">
+            <button id="back-btn"><i class="fa-solid fa-arrow-left"></i>Back to recipes</button>
+            <div class="meal-details-content">
+                <!-- 食谱详情将在这里动态生成 -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
